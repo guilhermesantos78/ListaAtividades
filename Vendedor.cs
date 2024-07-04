@@ -28,7 +28,7 @@ namespace ListaAtividades
             foreach (var peca in Vendas)
             {
                 double valorVenda = peca.PrecoUnitario * peca.Quantidade;
-                double comissao = valorVenda * 0.05; // Comissão de 5%
+                double comissao = valorVenda * 0.05; 
                 totalComissao += comissao;
             }
             return totalComissao;
