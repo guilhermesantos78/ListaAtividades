@@ -8,12 +8,12 @@ namespace ListaAtividades
 {
     public class Metodos
     {
-        public int EstoqueMedio { get; set; }
-        public void CalcularEstoqueMedio(int QuantidadeMax, int QuantidadeMin)
+        public double Media{ get; set; }
+        public void CalcularEstoqueMedio(double QuantidadeMax, double QuantidadeMin)
         {
-            EstoqueMedio = QuantidadeMin + QuantidadeMax / 2;
+            Media = (QuantidadeMax + QuantidadeMin)   / 2;
 
-            Console.WriteLine($"A media do seu estoque é{ EstoqueMedio }" );
+            Console.WriteLine($"A media do seu estoque é {Media}" );
         }
 
         public void DolarReal()
@@ -25,7 +25,7 @@ namespace ListaAtividades
 
             double resultado = Valor * Dolar;
 
-            Console.WriteLine($"seu dinheiro convertendo Dolar :{Dolar}$ em Real ficará em {resultado}$");
+            Console.WriteLine($"seu dinheiro convertendo Dolar :{Valor}$ em Real ficará em {resultado}$");
         }
 
         }

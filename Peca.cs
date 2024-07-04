@@ -8,7 +8,8 @@ namespace ListaAtividades
 {
     public class Peca
     {
-        public int CodPeca { get; set; }
-        public double Valor { get; set; }
+        public string Codigo { get; set; }
+        public double PrecoUnitario { get; set; }
+        public int Quantidade { get; set; }
     }
 }

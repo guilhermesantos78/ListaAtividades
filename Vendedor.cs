@@ -8,13 +8,30 @@ namespace ListaAtividades
 {
     public class Vendedor
     {
-        public int Identificacao { get; set; }
-        public double Comissao { get; set; }
-        public int QuantidadeVendas { get; set; }
+        public string Identificacao { get; set; }
+        public List<Peca> Vendas { get; set; }
 
-        public void CalculoComissao(Peca peca)
+        public Vendedor(string identificacao)
         {
-            Comissao = (peca.Valor * QuantidadeVendas) * 0.05;
+            Identificacao = identificacao;
+            Vendas = new List<Peca>();
+        }
+
+        public void RealizarVenda(Peca peca)
+        {
+            Vendas.Add(peca);
+        }
+
+        public double CalcularComissao()
+        {
+            double totalComissao = 0;
+            foreach (var peca in Vendas)
+            {
+                double valorVenda = peca.PrecoUnitario * peca.Quantidade;
+                double comissao = valorVenda * 0.05; // Comissão de 5%
+                totalComissao += comissao;
+            }
+            return totalComissao;
         }
     }
 }
