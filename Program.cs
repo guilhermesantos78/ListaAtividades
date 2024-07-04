@@ -16,7 +16,7 @@ m.CalcularEstoqueMedio(Max, Min);
 
 m.DolarReal();
 
-3
+//3
 Peca peca1 = new Peca { Codigo = "001", PrecoUnitario = 50.0, Quantidade = 10 };
 Peca peca2 = new Peca { Codigo = "002", PrecoUnitario = 30.0, Quantidade = 15 };
 Peca peca3 = new Peca { Codigo = "003", PrecoUnitario = 40.0, Quantidade = 8 };
