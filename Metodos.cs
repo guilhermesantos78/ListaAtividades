@@ -57,10 +57,13 @@ namespace ListaAtividades
             {
                 Console.WriteLine($"O numero {Modulo1} é maior que 0 ");
             }
-            else
+            else if (Modulo1 < 0)
             {
                 Console.WriteLine($"O numero {Modulo1} é menor que 0 ");
+
             }
+
+
         }
 
         }

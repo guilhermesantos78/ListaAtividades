@@ -2,7 +2,7 @@
 using System;
 
 Metodos m = new();
-////1
+//////1
 //System.Console.WriteLine("Digite a quantidade Maxima do estoque");
 //double Max = double.Parse(Console.ReadLine());
 
@@ -37,6 +37,6 @@ Metodos m = new();
 
 //m.Valores();
 
-//5
+////5
 
 m.Modulo();
