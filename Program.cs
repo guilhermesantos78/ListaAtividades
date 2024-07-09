@@ -39,4 +39,17 @@ Metodos m = new();
 
 ////5
 
-m.Modulo();
+//m.Modulo();
+
+
+//6 
+
+//Calculadora c = new ();
+
+//c.Sistem();
+
+//7
+
+atv7 a = new();
+
+a.Programa();
