@@ -50,6 +50,6 @@ Metodos m = new();
 
 //7
 
-atv7 a = new();
+//Escolha a = new();
 
-a.Programa();
+//a.Programa();
